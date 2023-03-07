@@ -94,14 +94,6 @@ Install this project with command: ```npm i```
 
 To run the project, execute the following command: ```npm run server```
 
-### Run tests
-
-To run tests, run the following command:
-
-### Deployment
-
-You can deploy this project using:
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
