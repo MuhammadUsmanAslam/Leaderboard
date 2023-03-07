@@ -84,15 +84,15 @@ In order to run this project you need: Node.js, NPM on your machine.
 
 ### Setup
 
-Clone this repository to your desired folder: by using this command: `git clone https://github.com/MuhammadUsmanAslam/Leaderboard.git`
+Clone this repository to your desired folder: by using this command: ```git clone https://github.com/MuhammadUsmanAslam/Leaderboard.git```
 
 ### Install
 
-Install this project with command: `npm i`
+Install this project with command: ```npm i```
 
 ### Usage
 
-To run the project, execute the following command: `npm run server`
+To run the project, execute the following command: ```npm run server```
 
 ### Run tests
 
