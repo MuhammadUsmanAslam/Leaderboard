@@ -20,7 +20,7 @@ button {
 }
 
 button:hover {
-  background-color: #555555;
+  background-color: #555;
   color: white;
 }
 
@@ -38,7 +38,7 @@ body > h1 {
 }
 
 .border-round {
-  border: 2px solid #555555;
+  border: 2px solid #555;
   border-radius: 0.25em;
 }
 
@@ -101,9 +101,9 @@ form > input {
   padding: 0.5em;
 }
 
-form > button {
+.submit-button {
   margin: 1em 0;
-  align-self: flex-end;
+  align-self: self-end;
 }
 
 /* Add New Score Ends Here */
