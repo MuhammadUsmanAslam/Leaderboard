@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
 }
 
 ul {
@@ -9,7 +12,16 @@ ul {
 }
 
 button {
-  padding: 0.25em 0.5em;
+  padding: 0.5em 1em;
+  transition: 0.4s;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
+button:hover {
+  background-color: #555555;
+  color: white;
 }
 
 .d-flex {
@@ -25,7 +37,24 @@ body > h1 {
   padding: 1em;
 }
 
+.border-round {
+  border: 2px solid #555555;
+  border-radius: 0.25em;
+}
+
+input[type=text] {
+  outline: none;
+  border: 2px solid #ccc;
+  border-radius: 0.25em;
+}
+
+input[type=text]:focus {
+  border-radius: 0.25em;
+  border: 2px solid #555;
+}
+
 /* Recent Scores starts Here */
+
 .recent-scores,
 .add-scores {
   flex: 1;
@@ -40,8 +69,8 @@ body > h1 {
 }
 
 .score-list {
-  border: 2px solid black;
   margin: 1em 0;
+  min-height: 2em;
 }
 
 .scrore-list-item {
@@ -49,7 +78,7 @@ body > h1 {
 }
 
 .scrore-list-item:nth-child(even) {
-  background-color: rgb(145, 145, 145);
+  background-color: rgb(221, 221, 221);
 }
 
 .recent-scores-header,
@@ -60,6 +89,7 @@ body > h1 {
 /* Recent Scores Ends Here */
 
 /* Add New Score Starts Here */
+
 form {
   display: flex;
   flex-direction: column;
