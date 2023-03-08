@@ -6,15 +6,16 @@ const displayScore = async () => {
   const scoreList = document.getElementById('score-list');
   scoreList.innerHTML = '';
   await fetch(
-    'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/yAPvdugADNNsXSbzR52S/scores/').then((response) => response.json()).then((json) => { 
-      let scores = json.result;
-      scores.forEach((scoreListItem) => {
-        const scoreItem = document.createElement('li');
-        scoreItem.className = 'scrore-list-item';
-        scoreItem.innerHTML = `Name: ${scoreListItem.user}, Score: ${scoreListItem.score}`;
-        scoreList.appendChild(scoreItem);
-      });
+    'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/yAPvdugADNNsXSbzR52S/scores/',
+  ).then((response) => response.json()).then((json) => {
+    const scores = json.result;
+    scores.forEach((scoreListItem) => {
+      const scoreItem = document.createElement('li');
+      scoreItem.className = 'scrore-list-item';
+      scoreItem.innerHTML = `Name: ${scoreListItem.user}, Score: ${scoreListItem.score}`;
+      scoreList.appendChild(scoreItem);
     });
+  });
 };
 
 window.addEventListener('load', () => {
