@@ -100,7 +100,7 @@ npm i
 
 To run the project, execute the following command: 
 ```bash
-npm run server
+npm start
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
